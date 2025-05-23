@@ -28,21 +28,21 @@ Download link to Unity Hub: [https://unity.com/download](https://unity.com/downl
 
 ## HOW TO RUN THE SIMULATION
 
-In the Unity editor, move to the Robot_Menu scene in the scenes folder
+In the Unity editor, move to the Robot_Menu scene in the scenes folder.
 While at this scene, click the play button at the top of the editor to start a runtime instance. 
 
 ### Controls
-* Esc: When in the RobotMenu scene, clicking ESC locates the simulation to the HospitalFloor scene
-* When in a different menu, clicking ESC locates the simulation to the RobotMenu scene
-* When in the HospitalFloor scene, clicking ESC locates the simulation to the RobotMenu scene
+* Esc: When in the RobotMenu scene, clicking ESC locates the simulation to the HospitalFloor scene.
+* When in a different menu, clicking ESC locates the simulation to the RobotMenu scene.
+* When in the HospitalFloor scene, clicking ESC locates the simulation to the RobotMenu scene.
 * Assigning tasks to the robot is conducted within the RobotMenu scene, which would locate the simulation to a respective menu depending on the button option selected on the RobotMenu scene.
 * The robot would then start conducting the task specified.
-* To end the simulation, click on the End Simulation button in the RobotMenu scene
+* To end the simulation, click on the End Simulation button in the RobotMenu scene.
 
 ## BRIEF OVERVIEW OF THE .CS FILES
 
 ### DigitalClock.cs
-This file configures the clock display to use a 12 hr (AM/PM) or 24 hr display
+This file configures the clock display to use a 12 hr (AM/PM) or 24 hr display.
 
 ### DoorController.cs
 This file controls the opening and closing logic of the doors, attached to a “Hinge” Empty GameObject.
@@ -57,7 +57,7 @@ This file relates to the EquipmentMenu scene, adding selected equipment to an eq
 This file manages the tracking logic of how much and what parts of the room is cleaned during the room cleaning behavior (CleanRoomWithLidar method in RobotManualMovement.cs).
 
 ### FoodMenu.cs
-This file relates to the FoodMenu scene, adding selected food to a foodList that the robot would be required to deliver
+This file relates to the FoodMenu scene, adding selected food to a foodList that the robot would be required to deliver.
 
 ### NurseMovement.cs, NurseMovement2.cs, NurseMovement3.cs
 This file controls the nurse movement during a Code Blue protocol, one for each of the nurse objects, with NurseMovement.cs controlling the actions that occur during Code Blue.
@@ -69,7 +69,7 @@ This file controls the actions that the robot performs. It contains the logic fo
 This file relates to the RobotMenu scene. It stores the task for the robot to conduct based on the button selected.
 
 ### Room.cs
-CS file for a Room class
+CS file for a Room class.
 
 ### RoomCameraController.cs
 This file is connected to a RoomCamera GameObject in the HospitalFloor scene, controlling the location of the RoomCamera based on the room selected. The camera gives a top-down view of the room.
