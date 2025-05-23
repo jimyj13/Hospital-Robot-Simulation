@@ -35,9 +35,8 @@ While at this scene, click the play button at the top of the editor to start a r
 * Esc: When in the RobotMenu scene, clicking ESC locates the simulation to the HospitalFloor scene
 * When in a different menu, clicking ESC locates the simulation to the RobotMenu scene
 * When in the HospitalFloor scene, clicking ESC locates the simulation to the RobotMenu scene
-
-* Assigning tasks to the robot is conducted within the RobotMenu scene, which would locate the simulation to a respective menu depending on the button option selected on the RobotMenu scene. The robot would then start conducting the task specified.
-
+* Assigning tasks to the robot is conducted within the RobotMenu scene, which would locate the simulation to a respective menu depending on the button option selected on the RobotMenu scene.
+* The robot would then start conducting the task specified.
 * To end the simulation, click on the End Simulation button in the RobotMenu scene
 
 ## BRIEF OVERVIEW OF THE .CS FILES
@@ -79,7 +78,8 @@ This file is connected to a RoomCamera GameObject in the HospitalFloor scene, co
 This file relates to the RoomSelection scene. It stores the room the user selects in the RoomSelection scene, used whenever the robot conducts a task or during Code Blue. Each room on the Hospital Floor image contains a clickable image that is linked to a method in the CS file.
 
 ### TaskManager.cs
-This file is essentially the database of the simulation. It is attached to a TaskManager Empty GameObject contained in the RobotMenu scene that is not destroyed when switching scenes, thus containing all stored information from other scenes. Note: As this is contained in the RobotMenu scene and other CS files rely on the variables contained in TaskManager, the simulation would fail if the RobotMenu is not the first scene.
+This file is essentially the database of the simulation. It is attached to a TaskManager Empty GameObject contained in the RobotMenu scene that is not destroyed when switching scenes, thus containing all stored information from other scenes.
+* NOTE: As this is contained in the RobotMenu scene and other CS files rely on the variables contained in TaskManager, the simulation would fail if the RobotMenu is not the first scene.
 
 ### TimeManager.cs
 This file configures how long a day would last within the simulation. Public float dayDuration is configured using seconds; 30f means one day lasts for 30s in real world time. 
