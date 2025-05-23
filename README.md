@@ -24,3 +24,20 @@ Unity project folder &amp; code for Hopsital Robot Simulation Capstone Project u
 * Windows: Hardware vendor officially supported drivers
 * macOS: Apple officially supported drivers
 * Linux: Gnome desktop environment running on top of X11 windowing system, Nvidia official proprietary graphics driver or AMD Mesa graphics driver. Other configuration and user environment as provided stock with the supported distribution (Kernel, Compositor, etc.)
+
+## HOW TO RUN THE SIMULATION
+
+In the Unity editor, move to the Robot_Menu scene in the scenes folder
+While at this scene, click the play button at the top of the editor to start a runtime instance. 
+
+### Controls
+Esc: When in the RobotMenu scene, clicking ESC locates the simulation to the HospitalFloor scene
+When in a different menu, clicking ESC locates the simulation to the RobotMenu scene
+When in the HospitalFloor scene, clicking ESC locates the simulation to the RobotMenu scene
+
+Assigning tasks to the robot is conducted within the RobotMenu scene, which would locate the simulation to a respective menu depending on the button option selected on the RobotMenu scene. The robot would then start conducting the task specified.
+
+To end the simulation, click on the End Simulation button in the RobotMenu scene
+
+## BRIEF OVERVIEW OF THE .CS FILES
+
